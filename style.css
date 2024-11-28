@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+}
+
+#ldiv{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+#lnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    
+}
+#lnav a{
+    text-decoration: none;
+    color: black;
+}
+
+#lnavr a{
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#lnavr{
+display: flex;
+align-items: center;
+margin-right: 30px;
+}
+
+#text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+#text h1{
+    font-size: 65px;
+}
+
+#text p{
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#text a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    
+}
+
+#rdiv{
+    width: 70%;
+    height: 100%;
+    background-color: black;
+   }
+
+#rtopdiv{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+}
+
+#rtopldiv{
+    width: 50%;
+    height: 100%;
+    background-image:url(https://plus.unsplash.com/premium_photo-1720785518474-d8b8a838dc93?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+
+#rtoprdiv{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1571575173700-afb9492e6a50?q=80&w=1036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size:cover;
+    background-position: center;
+}
+
+#rbottomdiv{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1531238466791-dcbbd6123634?q=80&w=2119&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+}
+@media(max-width: 500px) {
+    #main{
+        flex-direction: column;
+    }
+    #main #ldiv{
+        width: 100%;
+    }
+    #main #rdiv{
+        width: 100%;
+    }
+}
+
